@@ -50,10 +50,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp GRAVE   &kp EXCL             &kp AT          &kp HASH      &kp DLLR           &kp PRCNT               &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSPC
-&kp TAB     &mt HOME LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &mt END RIGHT      &kp PAGE_UP             &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp SINGLE_QUOTE
-&kp DELETE  &kp LC(LS(LEFT))     &kp LC(C)       &kp LC(V)     &kp LC(LS(RIGHT))  &kp PAGE_DOWN           &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
-                                                 &kp LCTRL     &to 0              &mt LEFT_SHIFT ENTER    &kp SPACE  &to 3      &kp RALT
+&kp GRAVE   &kp EXCL             &kp AT                    &kp HASH              &kp DLLR           &kp PRCNT               &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSPC
+&kp TAB     &mt HOME LEFT_ARROW  &mt PAGE_DOWN DOWN_ARROW  &mt PAGE_UP UP_ARROW  &mt END RIGHT      &none                   &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp SINGLE_QUOTE
+&kp DELETE  &kp LC(LS(LEFT))     &kp LC(X)                 &kp LC(C)             &kp LC(LS(RIGHT))  &kp LC(V)               &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
+                                                           &kp LCTRL             &to 0              &mt LEFT_SHIFT ENTER    &kp SPACE  &to 3      &kp RALT
             >;
         };
 
@@ -74,10 +74,10 @@
 
         layer_3 {
             bindings = <
-&trans      &kp LS(LC(TAB))  &kp LC(LEFT)  &kp LC(RIGHT)  &kp LC(TAB)  &kp PERIOD              &trans        &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans  &kp BACKSPACE
-&mo 4       &kp LEFT         &kp DOWN      &kp UP_ARROW   &kp RIGHT    &kp SLASH               &trans        &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans  &trans
-&kp DELETE  &trans           &trans        &trans         &trans       &trans                  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &to 2
-                                           &kp LCTRL      &to 0        &mt LEFT_SHIFT ENTER    &kp SPACE     &to 1         &kp RALT
+&trans      &kp LS(LC(TAB))         &kp LC(LEFT)              &kp LC(RIGHT)         &kp LC(TAB)        &kp PERIOD              &trans        &kp NUMBER_7        &mt ASTERISK N8  &kp NUMBER_9  &trans  &kp BACKSPACE
+&mo 4       &mt HOME LEFT           &mt PAGE_DOWN DOWN_ARROW  &mt PAGE_UP UP_ARROW  &mt END RIGHT      &kp SLASH               &kp MINUS     &mt EQUAL NUMBER_4  &kp N5           &kp NUMBER_6  &trans  &trans
+&kp DELETE  &kp LC(LS(LEFT_ARROW))  &kp LC(X)                 &kp LC(C)             &kp LC(LS(RIGHT))  &kp LC(V)               &mt UNDER N0  &mt PLUS NUMBER_1   &kp NUMBER_2     &kp NUMBER_3  &trans  &to 2
+                                                              &kp LCTRL             &to 0              &mt LEFT_SHIFT ENTER    &kp SPACE     &to 1               &kp RALT
             >;
         };
 
